@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[2680],{2680:(e,o,r)=>{r.r(o),r.d(o,{default:()=>c});var n=r(70821);const t={props:{form:Object}};const c=(0,r(83744).Z)(t,[["render",function(e,o,r,t,c,s){const u=(0,n.resolveComponent)("FormLayout");return(0,n.openBlock)(),(0,n.createBlock)(u,(0,n.normalizeProps)((0,n.guardReactiveProps)(r.form)),null,16)}]])}}]);
