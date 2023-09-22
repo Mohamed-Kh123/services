@@ -1,0 +1,16 @@
+{
+    "name": "laravel-magic/backend",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelMagic\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "baraa-eraif",
+            "email": "baraaeraif@gmail.com"
+        }
+    ],
+    "require": {}
+}
