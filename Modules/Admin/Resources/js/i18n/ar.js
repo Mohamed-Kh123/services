@@ -1,4 +1,4 @@
-import {generateCrudTrans} from "nawadash/src/utils/helper";
+import {generateCrudTrans} from "Baraadash/src/utils/helper";
 
 export default {
     app_name: "reams",

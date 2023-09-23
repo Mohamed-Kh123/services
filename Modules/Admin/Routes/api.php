@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use \Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,10 @@ use Illuminate\Http\Request;
 |
 */
 
-\Illuminate\Support\Facades\Route::middleware('auth:api')->get('/admin', function (Request $request) {
-    return $request->user();
-});
+//\Illuminate\Support\Facades\Route::middleware('auth:api')->get('/admin', function (Request $request) {
+//    return $request->user();
+//});
 
-\Illuminate\Support\Facades\Route::get('hi', function () {
-    return 'hhi';
+Route::group(['middleware' => 'auth:' . ADMIN_GUARD,'prefix' => 'admin'], function () {
+    Route::authApiRoutes();
 });

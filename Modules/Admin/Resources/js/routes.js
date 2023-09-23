@@ -1,4 +1,4 @@
-import {generateRoutes} from "nawadash/modules";
+import {generateRoutes} from "Baraadash/modules";
 
 const buildRoutes = function (resource) {
     let fileName$ = resource.includes('-') ? _.camelCase(resource) : resource;
