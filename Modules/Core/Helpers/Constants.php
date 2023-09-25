@@ -2,6 +2,7 @@
 
 
 const ADMIN_GUARD = 'admin-api';
+const USER_GUARD = 'user-api';
 
 define('LOGIN_TRANSACTION', 10001);
 

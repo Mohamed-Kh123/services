@@ -35,5 +35,7 @@ return [
     "currency" => "العملة",
     "constant" => "حالة الحجز",
     "paymentmethod" => "طرق الدفع ",
+    'service' => 'خدمة',
+    'category'=> 'فئة',
 
 ];

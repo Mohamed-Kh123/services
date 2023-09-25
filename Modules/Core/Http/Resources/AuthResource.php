@@ -29,8 +29,8 @@ class AuthResource extends BaseResource
             'name' => $this->name,
             'user_name' => $this->name,
             'email' => $this->email,
-            'role_name' => $this->role_name ? $this->role_name : '',
-            'policies' => $this->encodedPermissions() ?? [],
+//            'role_name' => $this->role_name ? $this->role_name : '',
+//            'policies' => $this->encodedPermissions() ?? [],
         ];
     }
 

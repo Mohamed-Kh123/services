@@ -320,8 +320,8 @@ if (!function_exists('double_formater')) {
 
     }
 }
-if (!function_exists('genrate_translations')) {
-    function genrate_translations($key, $attribute = []): array
+if (!function_exists('generate_translations')) {
+    function generate_translations($key, $attribute = []): array
     {
         if ($key)
             return [

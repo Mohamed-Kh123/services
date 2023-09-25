@@ -75,7 +75,7 @@ class AuthController extends BaseController
      */
     public function username()
     {
-        return 'username';
+        return 'email';
     }
 
     /**

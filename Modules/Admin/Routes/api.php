@@ -18,6 +18,11 @@ use \Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::group(['middleware' => 'auth:' . ADMIN_GUARD,'prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin'], function () {
     Route::authApiRoutes();
+
+
+    Route::resourceRoutes('category', 'CategoryController');
+    Route::resourceRoutes('service', 'ServiceController');
+
 });

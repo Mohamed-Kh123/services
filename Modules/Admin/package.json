@@ -21,6 +21,6 @@
     },
     "dependencies": {
         "@iconify/vue": "^3.1.2",
-        "Baraadash": "1.7.5"
+        "nawadash": "1.7.5"
     }
 }

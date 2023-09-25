@@ -8,5 +8,7 @@ export default function (app) {
             index: () => instance.generateURL("GET", {}, "home"),
         },
 
+        category: instance.resource('category'),
+        service: instance.resource('service'),
     };
 }

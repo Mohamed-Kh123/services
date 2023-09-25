@@ -35,6 +35,7 @@ return [
     "currency" => "Currency",
     "constant" => " booking status",
     "paymentmethod" => "Payment Method",
-
+    'service' => 'service',
+    'category'=> 'category',
 
 ];

@@ -1,4 +1,4 @@
-import {generateRoutes} from "Baraadash/modules";
+import {generateRoutes} from "nawadash/modules";
 
 const buildRoutes = function (resource) {
     let fileName$ = resource.includes('-') ? _.camelCase(resource) : resource;
@@ -30,5 +30,6 @@ const buildRoutes = function (resource) {
     };
 };
 export default [
-
+    buildRoutes('category'),
+    buildRoutes('service'),
 ];
