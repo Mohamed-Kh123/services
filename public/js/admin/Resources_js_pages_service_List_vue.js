@@ -23,14 +23,11 @@ var columns = [{
   text: "name",
   value: "name"
 }, {
-  text: "description",
-  value: "description"
-}, {
   text: "category_name",
   value: "category_name"
 }, {
-  text: "price",
-  value: "price"
+  text: "order_determine_types",
+  value: "order_determine_types_name"
 }, {
   text: "is_active",
   value: "is_active",

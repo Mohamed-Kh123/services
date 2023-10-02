@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->json('name');
             $table->json('description');
-            $table->json('category_data');
             $table->unsignedInteger('category_id');
-            $table->tinyInteger('is_active');
-            $table->unsignedDouble('price');
             $table->string('image')->nullable();
+            $table->json('counter_fields')->nullable();
+            $table->string('order_determine_types');
+            $table->tinyInteger('is_active')->default(1);
             $table->timestamps();
         });
     }
