@@ -50,6 +50,6 @@ export default {
     'admins.all': 'Show admins',
     'admins.create': 'Create admin',
     'admin_menu': 'Admins',
-
+    'name_email': 'name or email',  
 }
 

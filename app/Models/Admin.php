@@ -47,12 +47,6 @@ class Admin extends BaseModel implements JWTSubject
             $q->where('name', 'LIKE', "%$search%")
                 ->orWhere('email', 'LIKE', "%$search%");
 
-        if ($request->get('email_admins')) {
-            $q->where('email', "like", "%$request->email_admins%");
-        }
-        if ($request->get('email_admins')) {
-            $q->where('email', "like", "%$request->email_admins%");
-        }
         if ($request->get('role_admins')) {
             $q->whereHas('roles', function ($inner) use ($request) {
                 $inner->where('id', $request->role_admins);

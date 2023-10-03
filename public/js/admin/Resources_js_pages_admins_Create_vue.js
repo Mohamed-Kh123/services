@@ -69,7 +69,7 @@ var form = {
     component: "switch",
     model: "is_active",
     cols: 6,
-    label: "IS_ACTIVE"
+    label: "is_active"
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);

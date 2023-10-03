@@ -50,7 +50,7 @@ export default {
     'admins.all': 'عرض المدراء',
     'admins.create': 'إنشاء المدراء',
     'admin_menu': 'المدراء',
-
+    'name_email': 'الاسم أو الإيميل',
 }
 
 
