@@ -12,17 +12,17 @@ class Service extends BaseModel
     protected $fillable = [
         'name',
         'description',
-        'category_data',
         'category_id',
         'is_active',
         'image',
-        'price',
+        'order_determine_types',
+        'counter_fields',
     ];
 
     protected $casts = [
-        'name' => 'json',
-        'description' => 'json',
-        'category_data' => 'json',
+        'name' => 'array',
+        'description' => 'array',
+        'counter_fields' => 'array',
     ];
 
     public $translatable = [
@@ -34,5 +34,15 @@ class Service extends BaseModel
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function constant()
+    {
+        return $this->belongsTo(Constant::class,'order_determine_types','value->key');
+    }
+
+    public function selectGroups()
+    {
+        return $this->hasMany(SelectGroup::class,'service_id');
     }
 }
