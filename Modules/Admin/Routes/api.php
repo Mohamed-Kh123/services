@@ -26,6 +26,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Co
     Route::resourceRoutes('company', 'CompanyController');
     Route::resourceRoutes('employee', 'EmployeeController');
     Route::resourceRoutes('select-group', 'SelectGroupController');
+    Route::resourceRoutes('customer', 'CustomerController');
     Route::get('constant', 'ConstantController@index');
 
 });

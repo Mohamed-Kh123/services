@@ -29,5 +29,17 @@ export default {
     'company.create': 'Create company',
     'company': 'Companies',
     'employee': 'Employees',
+    'customer.all': 'Show customers',
+    'customer.create': 'Create customers',
+    'customer.edit': 'Edit customers',
+    'id': 'id',
+    'customers': 'Customers',
+    'dashboard': 'Dashboard',
+    'order_determine_types': 'specific service types',
+    'select_group': 'select group',
+    'group_options': 'group options',
+    'label': 'label',
+    'unit_price': 'unit price',
+    'counter_fields': 'counter fields',
 }
 

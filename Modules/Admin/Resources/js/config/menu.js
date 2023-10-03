@@ -6,6 +6,12 @@ export default [
         to: {name: "dashboard"},
     },
     {
+        key: "customers",
+        icon: "icon-grid-view",
+        label: "customers",
+        to: {name: "customer.all"},
+    },
+    {
         key: "company",
         icon: "icon-grid-view",
         label: "company",

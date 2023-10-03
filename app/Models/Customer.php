@@ -11,7 +11,7 @@ class Customer extends BaseModel implements JWTSubject
     use HasFactory;
 
     protected $fillable = [
-        'name','mobile','password','email'
+        'name', 'mobile', 'password', 'email'
     ];
 
     /**

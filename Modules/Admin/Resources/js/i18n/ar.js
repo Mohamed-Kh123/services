@@ -29,6 +29,18 @@ export default {
     'company.create': 'إنشاء شركة',
     'company': 'الشركات',
     'employee': 'الموظفين',
+    'customer.all': 'عرض الموظفين',
+    'customer.create': 'إنشاء زبون',
+    'customer.edit': 'تعديل زبون',
+    'id': 'الرقم التعريفي',
+    'customers': 'الزبائن',
+    'dashboard': 'الصفحة الرئيسية',
+    'order_determine_types': 'تحديد متغيرات الخدمة',
+    'select_group': 'اختر مجموعة',
+    'group_options': 'خيارات المجموعة',
+    'label': 'عنوان',
+    'unit_price': 'سعر الوحدة',
+    'counter_fields': 'حقول من نوع عداد',
 
 }
 

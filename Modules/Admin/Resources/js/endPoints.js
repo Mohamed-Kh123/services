@@ -15,5 +15,6 @@ export default function (app) {
         company: instance.resource('company'),
         employee: instance.resource('employee'),
         select_group: instance.resource('select-group'),
+        customer: instance.resource('customer'),
     };
 }

@@ -34,5 +34,6 @@ export default [
     buildRoutes('service'),
     buildRoutes('company'),
     buildRoutes('employee'),
+    buildRoutes('customer'),
 
 ];
