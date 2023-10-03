@@ -18,4 +18,6 @@ return [
     'description_en_required' => 'يرجى اضافة الوصف باللغة الانجليزية',
     'active_label' => 'مفعل',
     'in_active_label' => 'غير مفعل',
+    'commission_required' => 'يرجى اضافة قيمة الفاتورة',
+    'name_required' => 'يرجى اضافة الاسم',
 ];

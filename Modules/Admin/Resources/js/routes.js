@@ -32,4 +32,7 @@ const buildRoutes = function (resource) {
 export default [
     buildRoutes('category'),
     buildRoutes('service'),
+    buildRoutes('company'),
+    buildRoutes('employee'),
+
 ];

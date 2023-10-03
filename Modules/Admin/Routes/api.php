@@ -21,13 +21,11 @@ use \Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Core\Http\Middleware\LanguageMiddleware::class], function () {
 
     Route::authApiRoutes();
-
-
     Route::resourceRoutes('category', 'CategoryController');
     Route::resourceRoutes('service', 'ServiceController');
+    Route::resourceRoutes('company', 'CompanyController');
+    Route::resourceRoutes('employee', 'EmployeeController');
     Route::resourceRoutes('select-group', 'SelectGroupController');
-
-
     Route::get('constant', 'ConstantController@index');
 
 });

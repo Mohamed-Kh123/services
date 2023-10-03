@@ -1,5 +1,6 @@
 {
     "Admin": true,
     "Core": true,
-    "Api": true
+    "Api": true,
+    "Employee": true
 }

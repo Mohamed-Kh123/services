@@ -7,13 +7,13 @@ export default function (app) {
         home: {
             index: () => instance.generateURL("GET", {}, "home"),
         },
-
-
         constant: {
             index: () => instance.generateURL("GET", {}, "constant"),
         },
         category: instance.resource('category'),
         service: instance.resource('service'),
+        company: instance.resource('company'),
+        employee: instance.resource('employee'),
         select_group: instance.resource('select-group'),
     };
 }

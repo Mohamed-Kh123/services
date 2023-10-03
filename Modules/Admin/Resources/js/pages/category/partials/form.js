@@ -1,6 +1,6 @@
 const form = {
     config: {
-        resource: "category",
+        resource: "company",
     },
 
     inputs: [
@@ -16,8 +16,8 @@ const form = {
         },
         {
             component: "input",
-            model: "description",
-            label: "description",
+            model: "commission",
+            label: "commission",
             cols: 6,
             rules: {
                 required: true
@@ -25,15 +25,14 @@ const form = {
             multiLang: true,
         },
         {
-            component: "image",
-            model: "image",
-            label: "image",
-            image_url_option: "image_url",
+            component: "switch",
+            model: "is_active",
             cols: 6,
+            label: "is_active",
         },
         {
             component: "switch",
-            model: "is_active",
+            model: "has_commission",
             cols: 6,
             label: "is_active",
         },
