@@ -13,4 +13,10 @@ class AdminsController extends BaseController
 {
     public $model = Admin::class;
     public $resource = AdminsResource::class;
+
+    public function saving($model, Request $request)
+    {
+        $model->roles()->sync([$request->role]);
+        return $model;
+    }
 }
