@@ -1,4 +1,5 @@
 {
     "Admin": true,
-    "Core": true
+    "Core": true,
+    "Employee": true
 }

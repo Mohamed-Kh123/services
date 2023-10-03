@@ -24,5 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resourceRoutes('category', 'CategoryController');
     Route::resourceRoutes('service', 'ServiceController');
+    Route::resourceRoutes('company', 'CompanyController');
+    Route::resourceRoutes('employee', 'EmployeeController');
 
 });

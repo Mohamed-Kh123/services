@@ -18,5 +18,7 @@ return [
     'description_ar_required' =>'Please add the Description in Arabic',
     'active_label' => 'active',
     'in_active_label' => 'in active',
+    'commission_required' => 'Please add the commission',
+    'name_required' => 'Please add the name',
 ];
 

@@ -10,5 +10,7 @@ export default function (app) {
 
         category: instance.resource('category'),
         service: instance.resource('service'),
+        company: instance.resource('company'),
+        employee: instance.resource('employee'),
     };
 }
