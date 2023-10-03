@@ -19,7 +19,6 @@ class AdminsResource extends BaseResource
     public function toArray($request)
     {
        $role= $this->roles()->first();
-        dd($this->roles);
         return [
             'id' => $this->id,
             'name' => $this->name,
