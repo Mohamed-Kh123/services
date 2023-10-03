@@ -3,6 +3,7 @@
 
 const ADMIN_GUARD = 'admin-api';
 const USER_GUARD = 'user-api';
+const CUSTOMER_GUARD = 'customer-api';
 
 define('LOGIN_TRANSACTION', 10001);
 
@@ -210,7 +211,6 @@ define('ACCOUNT_NOT_FOUND', 1103);
  * Http status code
  */
 define('NOT_ENOUGH_CREDIT', 1104);
-
 
 
 define('STORAGE_FILES_PATH_PREFIX', 'reports/');
