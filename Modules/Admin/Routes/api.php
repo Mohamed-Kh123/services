@@ -21,12 +21,18 @@ use \Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Core\Http\Middleware\LanguageMiddleware::class], function () {
 
     Route::authApiRoutes();
-    Route::resourceRoutes('category', 'CategoryController');
-    Route::resourceRoutes('service', 'ServiceController');
-    Route::resourceRoutes('company', 'CompanyController');
-    Route::resourceRoutes('employee', 'EmployeeController');
-    Route::resourceRoutes('select-group', 'SelectGroupController');
-    Route::resourceRoutes('customer', 'CustomerController');
-    Route::get('constant', 'ConstantController@index');
 
+    Route::group(['middleware' => 'auth:' . ADMIN_GUARD], function () {
+        Route::resourceRoutes('category', 'CategoryController');
+        Route::resourceRoutes('service', 'ServiceController');
+        Route::resourceRoutes('company', 'CompanyController');
+        Route::resourceRoutes('employee', 'EmployeeController');
+        Route::resourceRoutes('select-group', 'SelectGroupController');
+        Route::resourceRoutes('customer', 'CustomerController');
+        Route::resourceRoutes('admin','AdminsController');
+        Route::get('constant', 'ConstantController@index');
+        Route::resourceRoutes('role', 'RoleController', function () {
+            Route::get('/get/permissions', 'RoleController@permissions');
+        });
+    });
 });

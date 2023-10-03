@@ -44,6 +44,10 @@ return [
             'driver' => 'jwt',
             'provider' => 'admins',
         ],
+        CUSTOMER_GUARD => [
+            'driver' => 'jwt',
+            'provider' => 'customers',
+        ]
     ],
 
     /*
@@ -72,7 +76,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ],
-
+        'customers' => [
+            'driver' => 'eloquent',
+            'table' => App\Models\Customer::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

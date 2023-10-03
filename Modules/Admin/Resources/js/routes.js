@@ -35,5 +35,7 @@ export default [
     buildRoutes('company'),
     buildRoutes('employee'),
     buildRoutes('customer'),
+    buildRoutes('role'),
+    buildRoutes('admins'),
 
 ];

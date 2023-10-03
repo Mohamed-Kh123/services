@@ -41,5 +41,15 @@ export default {
     'label': 'label',
     'unit_price': 'unit price',
     'counter_fields': 'counter fields',
+    'role': 'Rule',
+    'role.edit': 'Edit Rules ',
+    'role.all': 'Show Rules',
+    'role.create': 'Create  Rules',
+    'role_menu': 'Rule',
+    'admins.edit': 'Edit admin',
+    'admins.all': 'Show admins',
+    'admins.create': 'Create admin',
+    'admin_menu': 'Admins',
+
 }
 

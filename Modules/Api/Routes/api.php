@@ -14,7 +14,7 @@ use \Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => [\Modules\Core\Http\Middleware\LanguageMiddleware::class]], function () {
+Route::group(['prefix' => 'api', 'as' => 'api.', 'middleware' => [\Modules\Core\Http\Middleware\LanguageMiddleware::class]], function () {
 
     Route::authApiRoutes();
 

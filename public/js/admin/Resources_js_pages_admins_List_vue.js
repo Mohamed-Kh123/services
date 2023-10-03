@@ -42,15 +42,12 @@ var columns = [
 }, {
   text: "role",
   value: "role_name"
-}
-// {
-//     text: "is_active",
-//     value: "is_active",
-//     name: "admin.update",
-//     component: "switch-status"
-// },
-];
-
+}, {
+  text: "is_active",
+  value: "is_active",
+  name: "admin.update",
+  component: "switch-status"
+}];
 var config = {
   importBtn: false
   // pdfBtn: false,

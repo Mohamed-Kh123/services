@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[8580],{8580:(e,t,u)=>{u.r(t),u.d(t,{default:()=>s});const s={template:"<RouterView></RouterView>"}}}]);

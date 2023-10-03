@@ -57,23 +57,7 @@ var form = {
     rules: {
       required: true
     }
-    //  filter: (options) => {
-    //     console.log('sasssss', this?.form.vehicle_brand_id)
-    //     // return _.filter(options, function (option) {
-    //     //     return option.vehicle_brand_id === this?.form.vehicle_brand_id;
-    //     // });
-    // },
-  },
-  // {
-  //     component: "image",
-  //     model: "avatar",
-  //     label: "image",
-  //     image_url_option: "image_url",
-  //     cols: 6,
-  //     // class: "col-md-6",
-  //     // styleAttribute: "width:100px !important ;height : 100px !important"
-  // },
-  {
+  }, {
     component: "input",
     model: "password",
     label: "password",
@@ -81,16 +65,13 @@ var form = {
     rules: {
       required: false
     }
-  }
-  // {
-  //     component: "switch",
-  //     model: "is_active",
-  //     cols :6,
-  //     label: "IS_ACTIVE",
-  // },
-  ]
+  }, {
+    component: "switch",
+    model: "is_active",
+    cols: 6,
+    label: "IS_ACTIVE"
+  }]
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);
 
 /***/ }),

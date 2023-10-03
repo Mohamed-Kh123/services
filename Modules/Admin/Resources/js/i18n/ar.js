@@ -41,6 +41,15 @@ export default {
     'label': 'عنوان',
     'unit_price': 'سعر الوحدة',
     'counter_fields': 'حقول من نوع عداد',
+    'role': 'الصلاحيات',
+    'role.edit': 'تعديل الصلاحيات',
+    'role.all': 'عرض الصلاحيات',
+    'role.create': 'إنشاء الصلاحيات',
+    'role_menu': 'الصلاحيات',
+    'admins.edit': 'تعديل المدراء',
+    'admins.all': 'عرض المدراء',
+    'admins.create': 'إنشاء المدراء',
+    'admin_menu': 'المدراء',
 
 }
 

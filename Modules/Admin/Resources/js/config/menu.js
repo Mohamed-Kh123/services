@@ -6,6 +6,18 @@ export default [
         to: {name: "dashboard"},
     },
     {
+        key: "admins",
+        icon: "fas fa-user-tie",
+        label: "admin_menu",
+        to: {name: "admins.all"}
+    },
+    {
+        key: "role",
+        icon: "fas fa-user-edit",
+        label: "role_menu",
+        to: {name: "role.all"}
+    },
+    {
         key: "customers",
         icon: "icon-grid-view",
         label: "customers",
@@ -37,5 +49,6 @@ export default [
         label: "employee",
         to: {name: "employee.all"},
     },
+
 
 ];
