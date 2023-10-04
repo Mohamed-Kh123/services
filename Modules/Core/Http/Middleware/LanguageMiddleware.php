@@ -22,7 +22,7 @@ class LanguageMiddleware
          * request, if so change the dashboard language
          * @author Nawa
          *
-         */
+        */
 
         $lang = $request->header('language');
         if (isset($lang) && $lang != "null") {

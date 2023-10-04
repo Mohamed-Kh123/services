@@ -54,7 +54,7 @@ export default {
         class: "theme1"
     },
     permissions: {
-        enabled: false,
+        enabled: true,
     },
     determinants: {
         endpoint: {method: "GET", url: "/api/admin/home/determinant"},

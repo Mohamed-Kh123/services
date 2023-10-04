@@ -36,14 +36,12 @@
             'edit',
             'delete',
         ],
-
         'company' => [
             'show',
             'create',
             'edit',
             'delete',
         ],
-
         'select-group' => [
             'show',
             'create',
