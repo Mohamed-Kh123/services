@@ -24,13 +24,14 @@ class AuthResource extends BaseResource
      */
     public function serializeForEdit($request)
     {
+        $role = $this->roles()->first();
         return [
             'id' => $this->id,
             'name' => $this->name,
             'user_name' => $this->name,
             'email' => $this->email,
-//            'role_name' => $this->role_name ? $this->role_name : '',
-//            'policies' => $this->encodedPermissions() ?? [],
+            'role_name' => $role ? $role->name : '',
+            'policies' => $this->encodedPermissions() ?? [],
         ];
     }
 
