@@ -51,5 +51,6 @@ export default {
     'admins.create': 'Create admin',
     'admin_menu': 'Admins',
     'name_email': 'name or email',
+    'min_price': 'Minimum price',
 }
 

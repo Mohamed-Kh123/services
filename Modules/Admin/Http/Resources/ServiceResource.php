@@ -21,12 +21,13 @@ class ServiceResource extends BaseResource
         return [
             'id' => $this->id,
             'name' => $this->getTranslations('name'),
-            'description' => html_to_text_multilingual(),
+            'description' => $this->getTranslations('description'),
             'is_active' => $this->is_active,
             'category_name' => optional($this->category)->name,
             'category_id' => $this->category_id,
             'order_determine_types' => $this->order_determine_types,
-            'order_determine_types_name' => get($this->constant, 'name')
+            'order_determine_types_name' => get($this->constant, 'name'),
+            'min_price' => $this->min_price,
         ];
     }
 

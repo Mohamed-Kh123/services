@@ -17,6 +17,7 @@ class Service extends BaseModel
         'image',
         'order_determine_types',
         'counter_fields',
+        'min_price',
     ];
 
     protected $casts = [

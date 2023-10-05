@@ -76,6 +76,25 @@ var form = {
       required: true
     }
   }, {
+    component: "input",
+    model: "min_price",
+    label: "min_price",
+    cols: 6,
+    rules: {
+      required: true
+    }
+  }, {
+    component: "switch",
+    model: "is_active",
+    cols: 6,
+    label: "is_active"
+  }, {
+    component: "image",
+    model: "image",
+    label: "image",
+    image_url_option: "image_url",
+    cols: 6
+  }, {
     component: "repeater",
     label: "counter_fields",
     model: "counter_fields",
@@ -147,17 +166,6 @@ var form = {
         cols: 6
       }]
     }]
-  }, {
-    component: "switch",
-    model: "is_active",
-    cols: 6,
-    label: "is_active"
-  }, {
-    component: "image",
-    model: "image",
-    label: "image",
-    image_url_option: "image_url",
-    cols: 6
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);

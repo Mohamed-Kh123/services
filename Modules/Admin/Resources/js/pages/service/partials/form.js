@@ -55,7 +55,28 @@ const form = {
                 required: true
             },
         },
-
+        {
+            component: "input",
+            model: "min_price",
+            label: "min_price",
+            cols: 6,
+            rules: {
+                required: true
+            },
+        },
+        {
+            component: "switch",
+            model: "is_active",
+            cols: 6,
+            label: "is_active",
+        },
+        {
+            component: "image",
+            model: "image",
+            label: "image",
+            image_url_option: "image_url",
+            cols: 6,
+        },
         {
             component: "repeater",
             label: "counter_fields",
@@ -78,7 +99,6 @@ const form = {
                 },
             ],
         },
-
         {
             component: "crud",
             label: "select_group",
@@ -144,19 +164,7 @@ const form = {
             ],
 
         },
-        {
-            component: "switch",
-            model: "is_active",
-            cols: 6,
-            label: "is_active",
-        },
-        {
-            component: "image",
-            model: "image",
-            label: "image",
-            image_url_option: "image_url",
-            cols: 6,
-        },
+
     ]
 };
 

@@ -51,6 +51,7 @@ export default {
     'admins.create': 'إنشاء المدراء',
     'admin_menu': 'المدراء',
     'name_email': 'الاسم أو الإيميل',
+    'min_price' : 'سعر الحد الأدنى',
 }
 
 
