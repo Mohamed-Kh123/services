@@ -203,3 +203,54 @@ function translated_booking_statues()
         $labels[] = trans("admin::lang.$status");
     return $labels;
 }
+if (!function_exists('str_mask')) {
+    function str_mask(string $string, string $character, int $index)
+    {
+        return Str::mask($string, $character, $index);
+    }
+}
+
+if (!function_exists('html_to_text')) {
+    function html_to_text($html)
+    {
+        // Remove HTML tags
+        $text = strip_tags($html);
+
+        // Decode HTML entities
+        $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+
+        // Remove extra whitespace and trim
+        $text = preg_replace('/\s+/', ' ', $text);
+        return trim($text);
+    }
+}
+if (!function_exists('html_string_mask')) {
+    function html_string_mask($html, $index = 5)
+    {
+        return $html ? str_mask(html_to_text($html), '*', $index) : null;
+    }
+}
+if (!function_exists('html_to_text_multilingual')) {
+    function html_to_text_multilingual($htmlObject)
+    {
+        $text = [];
+
+        // Convert HTML content for the 'ar' language to plain text
+        if (isset($htmlObject->ar)) {
+            $arabicText = strip_tags($htmlObject->ar);
+            $arabicText = html_entity_decode($arabicText, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $arabicText = preg_replace('/\s+/', ' ', $arabicText);
+            $text['ar'] = trim($arabicText);
+        }
+
+        // Convert HTML content for the 'en' language to plain text
+        if (isset($htmlObject->en)) {
+            $englishText = strip_tags($htmlObject->en);
+            $englishText = html_entity_decode($englishText, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $englishText = preg_replace('/\s+/', ' ', $englishText);
+            $text['en'] = trim($englishText);
+        }
+
+        return $text;
+    }
+}

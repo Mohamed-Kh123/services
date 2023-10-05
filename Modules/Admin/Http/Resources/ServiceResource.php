@@ -21,7 +21,7 @@ class ServiceResource extends BaseResource
         return [
             'id' => $this->id,
             'name' => $this->getTranslations('name'),
-            'description' => $this->getTranslations('description'),
+            'description' => html_to_text_multilingual(),
             'is_active' => $this->is_active,
             'category_name' => optional($this->category)->name,
             'category_id' => $this->category_id,
