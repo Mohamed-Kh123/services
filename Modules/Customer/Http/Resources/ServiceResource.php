@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Modules\Api\Http\Resources;
+namespace Modules\Customer\Http\Resources;
 
 use Illuminate\Support\Facades\Hash;
 use Modules\Core\Http\Resources\BaseResource;
@@ -20,8 +20,8 @@ class ServiceResource extends BaseResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->getTranslations('name'),
-            'description' => $this->getTranslations('description'),
+            'name' => $this->name,
+            'description' => $this->description,
             'category_name' => optional($this->category)->name,
             'order_determine_types' => $this->order_determine_types,
         ];

@@ -23,8 +23,8 @@ class Category extends BaseModel
     ];
 
     protected $casts = [
-        'name' => 'json',
-        'description' => 'json',
+        'name' => 'array',
+        'description' => 'array',
     ];
 
 }

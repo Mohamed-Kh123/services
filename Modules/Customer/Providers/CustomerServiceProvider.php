@@ -1,21 +1,21 @@
 <?php
 
-namespace Modules\Api\Providers;
+namespace Modules\Customer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class ApiServiceProvider extends ServiceProvider
+class CustomerServiceProvider extends ServiceProvider
 {
     /**
      * @var string $moduleName
      */
-    protected $moduleName = 'Api';
+    protected $moduleName = 'Customer';
 
     /**
      * @var string $moduleNameLower
      */
-    protected $moduleNameLower = 'api';
+    protected $moduleNameLower = 'customer';
 
     /**
      * Boot the application events.

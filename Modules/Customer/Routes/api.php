@@ -14,13 +14,18 @@ use \Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'api', 'as' => 'api.', 'middleware' => [\Modules\Core\Http\Middleware\LanguageMiddleware::class]], function () {
+Route::group(['prefix' => 'customer', 'as' => 'customer.', 'middleware' => [\Modules\Core\Http\Middleware\LanguageMiddleware::class]], function () {
 
     Route::authApiRoutes();
 
+    Route::prefix('service')->controller('ServiceController')->group(function () {
+        Route::get('/', 'index');
+        Route::get('/{id}', 'show');
+    });
 
-    Route::get('service', 'ServiceController@index');
-    Route::get('category', 'CategoryController@index');
-
+    Route::prefix('category')->controller('CategoryController')->group(function () {
+        Route::get('/', 'index');
+        Route::get('/{id}', 'show');
+    });
 
 });

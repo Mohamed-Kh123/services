@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Modules\Api\Http\Resources;
+namespace Modules\Customer\Http\Resources;
 
 use Modules\Core\Http\Resources\BaseResource;
 
@@ -17,8 +17,8 @@ class SelectGroupResource extends BaseResource
     {
         return [
             'id' => $this->id,
-            'title' => $this->getTranslations('title'),
-            'description' => $this->getTranslations('description'),
+            'title' => $this->title,
+            'description' => $this->description,
             'group_options' => $this->group_options,
             'service_id' => $this->service_id
         ];

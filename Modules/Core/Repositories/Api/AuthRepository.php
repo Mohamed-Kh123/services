@@ -2,7 +2,7 @@
 
 namespace Modules\Core\Repositories\Api;
 
-use App\User;
+use App\Models\Customer;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Modules\Core\Events\UserAuthentication;
@@ -19,7 +19,7 @@ class AuthRepository implements AuthInterface
 {
 
 
-    public $modelPath = User::class;
+    public $modelPath = Customer::class;
     public $guard = USER_GUARD;
 
     /**
@@ -31,6 +31,7 @@ class AuthRepository implements AuthInterface
     public function login($credentials)
     {
 //        dd($credentials);
+
         Config::set('jwt.user', $this->modelPath);                        // change jwt user @author Nawa
         Config::set('auth.providers.users.model', $this->modelPath);      // load the user model @author Nawa
 

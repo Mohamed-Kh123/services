@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Enums\ConstantEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Api\Http\Controllers;
+namespace Modules\Customer\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class ApiController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ApiController extends Controller
      */
     public function index()
     {
-        return view('api::index');
+        return view('customer::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class ApiController extends Controller
      */
     public function create()
     {
-        return view('api::create');
+        return view('customer::create');
     }
 
     /**
@@ -43,7 +43,7 @@ class ApiController extends Controller
      */
     public function show($id)
     {
-        return view('api::show');
+        return view('customer::show');
     }
 
     /**
@@ -53,7 +53,7 @@ class ApiController extends Controller
      */
     public function edit($id)
     {
-        return view('api::edit');
+        return view('customer::edit');
     }
 
     /**

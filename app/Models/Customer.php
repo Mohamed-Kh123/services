@@ -14,6 +14,10 @@ class Customer extends BaseModel implements JWTSubject
         'name', 'mobile', 'password', 'email'
     ];
 
+    protected $casts = [
+        'password' => 'hashed'
+    ];
+
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *

@@ -2,5 +2,6 @@
     "Admin": true,
     "Core": true,
     "Api": true,
-    "Employee": true
+    "Employee": true,
+    "Customer": true
 }
