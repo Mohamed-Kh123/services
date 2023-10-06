@@ -18,7 +18,6 @@ class CategoryResource extends BaseResource
      */
     public function toArray($request)
     {
-        \Illuminate\Support\Facades\Artisan::call('optimize:clear');
         return [
             'id' => $this->id,
             'name' => $this->getTranslations('name'),
