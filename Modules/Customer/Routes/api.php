@@ -18,6 +18,8 @@ Route::group(['prefix' => 'customer', 'as' => 'customer.', 'middleware' => [\Mod
 
     Route::authApiRoutes();
 
+    Route::get('splash', 'MainController@index');
+
     Route::prefix('service')->controller('ServiceController')->group(function () {
         Route::get('/', 'index');
         Route::get('/{id}', 'show');
