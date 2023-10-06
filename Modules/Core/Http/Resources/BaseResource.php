@@ -28,7 +28,7 @@ class BaseResource extends JsonResource
      */
     public function serializeForEdit($request)
     {
-        return array_merge($this->toArray($request), $this->sanitizeTranslations($request));
+        return array_merge($this->toArray($request));
     }
 
     /**
