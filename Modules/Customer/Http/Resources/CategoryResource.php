@@ -22,6 +22,7 @@ class CategoryResource extends BaseResource
             'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
+            'image_url' => $this->image ? image_url($this->image) : null,
         ];
     }
 

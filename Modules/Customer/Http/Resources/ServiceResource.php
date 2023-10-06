@@ -24,6 +24,7 @@ class ServiceResource extends BaseResource
             'description' => $this->description,
             'category_name' => optional($this->category)->name,
             'order_determine_types' => $this->order_determine_types,
+            'image_url' => $this->image ? image_url($this->image) : null,
         ];
     }
 
