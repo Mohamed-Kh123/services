@@ -20,6 +20,10 @@ var columns = [{
   text: "id",
   value: "id"
 }, {
+  text: "image",
+  value: "image_url",
+  component: "image-holder"
+}, {
   text: "name",
   value: "name"
 }, {

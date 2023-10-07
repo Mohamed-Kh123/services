@@ -30,4 +30,8 @@ Route::group(['prefix' => 'customer', 'as' => 'customer.', 'middleware' => [\Mod
         Route::get('/{id}', 'show');
     });
 
+    Route::prefix('order')->controller('OrderController')->group(function () {
+        Route::post('/', 'store');
+    });
+
 });

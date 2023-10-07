@@ -15,38 +15,39 @@ var form = {
   config: {
     resource: "customer"
   },
+  // 'name', 'mobile', 'password', 'email'
   inputs: [{
     component: "input",
     model: "name",
     label: "name",
-    cols: 12,
+    cols: 6,
     rules: {
       required: true
-    },
-    multiLang: false
-  }, {
-    component: "switch",
-    model: "has_commission",
-    cols: 6,
-    label: "has_commission"
-  }, {
-    component: "switch",
-    model: "is_active",
-    cols: 6,
-    label: "is_active"
+    }
   }, {
     component: "input",
-    model: "commission",
-    label: "commission",
+    model: "mobile",
+    label: "mobile",
     cols: 6,
-    show: function show() {
-      var _this$form;
-      return (this === null || this === void 0 || (_this$form = this.form) === null || _this$form === void 0 ? void 0 : _this$form.has_commission) === 1;
-    },
     rules: {
-      required: false
-    },
-    multiLang: false
+      required: true
+    }
+  }, {
+    component: "input",
+    model: "email",
+    label: "email",
+    cols: 6,
+    rules: {
+      required: true
+    }
+  }, {
+    component: "input",
+    model: "password",
+    label: "password",
+    cols: 6,
+    rules: {
+      required: true
+    }
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);

@@ -5,6 +5,11 @@ const columns = [
         value: "id",
     },
     {
+        text: "image",
+        value: "image_url",
+        component: "image-holder",
+    },
+    {
         text: "name",
         value: "name",
     },

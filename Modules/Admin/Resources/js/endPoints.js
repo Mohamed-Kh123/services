@@ -16,6 +16,7 @@ export default function (app) {
         employee: instance.resource('employee'),
         select_group: instance.resource('select-group'),
         customer: instance.resource('customer'),
+        slider: instance.resource('slider'),
 
         role: instance.resource("role", {
             permissions: () => instance.generateURL('GET', {}, 'role/get/permissions'),

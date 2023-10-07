@@ -24,6 +24,7 @@ class CategoryResource extends BaseResource
             'description' => $this->getTranslations('description'),
             'is_active' => $this->is_active,
             'is_active_label' => $this->is_active == 1 ? trans('admin::messages.active_label') : trans('admin::messages.in_active_label'),
+            'image_url' => $this->image ? image_url($this->image) : null,
         ];
     }
 

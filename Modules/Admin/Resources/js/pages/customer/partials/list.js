@@ -16,14 +16,6 @@ const columns = [
         text: "mobile",
         value: "mobile",
     },
-    // {
-    //     text: "is_active",
-    //     value: "is_active",
-    //     name: "company.update",
-    //     component: "switch-status"
-    // },
-
-
 ];
 const config = {
     importBtn: false,

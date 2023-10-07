@@ -30,6 +30,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Co
         Route::resourceRoutes('select-group', 'SelectGroupController');
         Route::resourceRoutes('customer', 'CustomerController');
         Route::resourceRoutes('admin','AdminsController');
+        Route::resourceRoutes('slider','SliderController');
         Route::get('constant', 'ConstantController@index');
         Route::resourceRoutes('role', 'RoleController', function () {
             Route::get('/get/permissions', 'RoleController@permissions');

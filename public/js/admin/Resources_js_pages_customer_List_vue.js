@@ -28,15 +28,7 @@ var columns = [{
 }, {
   text: "mobile",
   value: "mobile"
-}
-// {
-//     text: "is_active",
-//     value: "is_active",
-//     name: "company.update",
-//     component: "switch-status"
-// },
-];
-
+}];
 var config = {
   importBtn: false,
   pdfBtn: false,

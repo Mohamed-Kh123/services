@@ -42,7 +42,7 @@ export default {
     //
     notifications: {
         display: false,
-        route: "/order-notification/all",
+        route: "/notification/all",
         displayLatest: 6,
     },
     theme: "theam1",
@@ -54,7 +54,7 @@ export default {
         class: "theme1"
     },
     permissions: {
-        enabled: true,
+        enabled: false,
     },
     determinants: {
         endpoint: {method: "GET", url: "/api/admin/home/determinant"},

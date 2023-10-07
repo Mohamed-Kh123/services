@@ -18,7 +18,7 @@ export default [
         to: {name: "role.all"}
     },
     {
-        key: "customers",
+        key: "customer",
         icon: "icon-grid-view",
         label: "customers",
         to: {name: "customer.all"},
@@ -49,6 +49,11 @@ export default [
         label: "employee",
         to: {name: "employee.all"},
     },
-
+    {
+        key: "slider",
+        icon: "icon-grid-view",
+        label: "slider",
+        to: {name: "slider.all"},
+    },
 
 ];
