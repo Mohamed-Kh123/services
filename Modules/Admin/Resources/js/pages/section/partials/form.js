@@ -96,6 +96,7 @@ const form = {
             ratio: 16 / 9,
             endPoint: 'upload.album',
             show: function () {
+                console.log('slider_type', this?.form?.type);
                 return this?.form?.type === 'slider_section';
             },
         },
@@ -113,6 +114,7 @@ const form = {
                 required: false
             },
             show: function () {
+                console.log('category_type', this?.form?.type);
                 return this?.form?.type === 'category_section';
             },
         },
@@ -130,6 +132,7 @@ const form = {
                 required: false
             },
             show: function () {
+                console.log('service_type', this?.form?.type);
                 return this?.form?.type === 'service_section';
             },
         },
