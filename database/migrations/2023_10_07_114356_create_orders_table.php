@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -14,14 +13,14 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('service_id');
-            $table->unsignedBigInteger('service_data');
-            $table->unsignedBigInteger('items');
+            $table->json('service_data');
+            $table->json('items');
             $table->double('total');
             $table->unsignedBigInteger('customer_id');
             $table->json('customer_data');
             $table->json('data')->nullable();
             $table->timestamp('booking_at');
-            $table->string('payment_method');
+            $table->enum('payment_method', [\App\Enum\ConstantEnum::STRIPE, \App\Enum\ConstantEnum::TAMARA, \App\Enum\ConstantEnum::TABBY,]);
             $table->softDeletes();
             $table->timestamps();
         });

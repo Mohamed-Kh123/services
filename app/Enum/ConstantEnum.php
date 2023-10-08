@@ -19,5 +19,13 @@ enum ConstantEnum
 
     const BLOG_SECTION = 'blog_section';
 
+    const PAYMENT_METHODS = 'payment_methods';
+
+    const TABBY = 'tabby';
+
+    const TAMARA = 'tamara';
+
+    const STRIPE = 'stripe';
+
 
 }

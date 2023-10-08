@@ -67,7 +67,7 @@ class Constant extends BaseModel
         return $query->get();
     }
 
-    public static function pluckValueKeys($key)
+    public static function pluckValueKey($key)
     {
         return self::query()->where("key", $key)->pluck('value')->pluck('key')->toArray();
     }

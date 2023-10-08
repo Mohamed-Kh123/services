@@ -11,11 +11,14 @@ class Order extends BaseModel
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'service_id', 'service_data', 'items', 'total', 'customer_id', 'customer_data', 'data'
+        'service_id', 'service_data', 'items', 'total', 'customer_id', 'customer_data', 'data', 'booking_at', 'payment_method',
     ];
 
     protected $casts = [
-        'customer_data' => 'array', 'data' => 'array', 'service_data' => 'array', 'items' => 'array',
+        'customer_data' => 'array',
+        'data' => 'array',
+        'service_data' => 'array',
+        'items' => 'array',
     ];
 
     public function customer()
