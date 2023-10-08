@@ -29,7 +29,6 @@ class ServiceResource extends BaseResource
             'order_determine_types_name' => get($this->constant, 'name'),
             'min_price' => $this->min_price,
             'image_url' => $this->image ? image_url($this->image) : null,
-
         ];
     }
 

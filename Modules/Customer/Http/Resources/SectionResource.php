@@ -20,6 +20,7 @@ class SectionResource extends BaseResource
     {
         return [
             'id' => $this->id,
+            'name' => $this->getTranslations('name'),
             'type' => $this->type,
             'ordered' => $this->ordered,
             'data' => $this->section_type

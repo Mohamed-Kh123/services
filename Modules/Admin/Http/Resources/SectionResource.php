@@ -25,6 +25,7 @@ class SectionResource extends BaseResource
             'ordered' => $this->ordered,
             'is_active' => $this->is_active,
             'image_url' => $this->data && $this->data['images'] ? image_url($this->data['images'], '', true) : null,
+            'images' => $this->data && $this->data['images'] ? $this->data['images'] : [],
         ];
     }
 
