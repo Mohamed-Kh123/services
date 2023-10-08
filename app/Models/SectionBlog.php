@@ -24,4 +24,6 @@ class SectionBlog extends BaseModel
         'text' => 'array',
         'title' => 'array',
     ];
+
+    public $imageable = ['image'];
 }

@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->json('name');
             $table->string('type');
-            $table->json('data');
+            $table->json('data')->nullable();
             $table->integer('ordered')->nullable();
             $table->tinyInteger('is_active')->default(1);
             $table->softDeletes();

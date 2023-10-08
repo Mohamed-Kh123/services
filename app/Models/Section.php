@@ -13,7 +13,7 @@ class Section extends BaseModel
     protected $fillable = ['name', 'type', 'data', 'ordered', 'is_active'];
 
     public $translatable = [
-        'name' => 'type',
+        'name'
     ];
 
     protected $casts = [
