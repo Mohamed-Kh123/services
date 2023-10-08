@@ -20,4 +20,8 @@ return [
     'in_active_label' => 'غير مفعل',
     'commission_required' => 'يرجى اضافة قيمة الفاتورة',
     'name_required' => 'يرجى اضافة الاسم',
+    'categories_required' => 'يرجى اضافة الفئات',
+    'services_required' => 'يرجى اضافة الخدمات',
+    'images_required' => 'يرجى اضافة الألبوم',
+
 ];

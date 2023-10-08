@@ -58,5 +58,7 @@ export default {
     'section': 'Sections',
     'type': 'type',
     'album': 'album',
+    'categories': 'categories',
+    'services': 'services',
 }
 

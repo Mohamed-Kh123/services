@@ -58,6 +58,8 @@ export default {
     'section': 'الأقسام',
     'type': 'نوع',
     'album': 'ألبوم',
+    'categories': 'الفئات',
+    'services': 'الخدمات',
 }
 
 

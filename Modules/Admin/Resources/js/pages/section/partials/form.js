@@ -96,13 +96,43 @@ const form = {
             ratio: 16 / 9,
             endPoint: 'upload.album',
             show: function () {
-                return this?.form?.type === 'section_sliders';
+                return this?.form?.type === 'slider_section';
             },
         },
 
+        {
+            component: "select",
+            model: "categories",
+            label: "categories",
+            track_value: "id",
+            option_name: "name",
+            multiple: true,
+            cols: 6,
+            endPoint: {name: 'category.index', params: {no_pagination: true}},
+            rules: {
+                required: false
+            },
+            show: function () {
+                return this?.form?.type === 'category_section';
+            },
+        },
 
-
-
+        {
+            component: "select",
+            model: "services",
+            label: "services",
+            track_value: "id",
+            option_name: "name",
+            multiple: true,
+            cols: 6,
+            endPoint: {name: 'service.index', params: {no_pagination: true}},
+            rules: {
+                required: false
+            },
+            show: function () {
+                return this?.form?.type === 'service_section';
+            },
+        },
     ]
 };
 

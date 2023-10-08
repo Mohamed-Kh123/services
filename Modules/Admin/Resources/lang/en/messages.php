@@ -20,5 +20,8 @@ return [
     'in_active_label' => 'in active',
     'commission_required' => 'Please add the commission',
     'name_required' => 'Please add the name',
+    'categories_required' => 'The categories field is required.',
+    'services_required' => 'The services field is required.',
+    'images_required' => 'The album field is required.',
 ];
 

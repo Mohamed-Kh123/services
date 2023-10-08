@@ -26,7 +26,9 @@ class SectionResource extends BaseResource
             'ordered' => $this->ordered,
             'is_active' => $this->is_active,
             'image_url' => $this->data && $this->data['images'] ? image_url($this->data['images'], '', true) : null,
-            'images' => $this->images ? AttachmentResource::collection($this->images) : []
+            'images' => $this->images ? AttachmentResource::collection($this->images) : [],
+            'services' => $this->services ? pluck($this->services, 'id') : [],
+            'categories' => $this->categories ? pluck($this->categories, 'id') : [],
         ];
     }
 

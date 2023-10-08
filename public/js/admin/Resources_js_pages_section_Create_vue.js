@@ -103,7 +103,49 @@ var form = {
     endPoint: 'upload.album',
     show: function show() {
       var _this$form2;
-      return (this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type) === 'section_sliders';
+      return (this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type) === 'slider_section';
+    }
+  }, {
+    component: "select",
+    model: "categories",
+    label: "categories",
+    track_value: "id",
+    option_name: "name",
+    multiple: true,
+    cols: 6,
+    endPoint: {
+      name: 'category.index',
+      params: {
+        no_pagination: true
+      }
+    },
+    rules: {
+      required: false
+    },
+    show: function show() {
+      var _this$form3;
+      return (this === null || this === void 0 || (_this$form3 = this.form) === null || _this$form3 === void 0 ? void 0 : _this$form3.type) === 'category_section';
+    }
+  }, {
+    component: "select",
+    model: "services",
+    label: "services",
+    track_value: "id",
+    option_name: "name",
+    multiple: true,
+    cols: 6,
+    endPoint: {
+      name: 'service.index',
+      params: {
+        no_pagination: true
+      }
+    },
+    rules: {
+      required: false
+    },
+    show: function show() {
+      var _this$form4;
+      return (this === null || this === void 0 || (_this$form4 = this.form) === null || _this$form4 === void 0 ? void 0 : _this$form4.type) === 'service_section';
     }
   }]
 };
