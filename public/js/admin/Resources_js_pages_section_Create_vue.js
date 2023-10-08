@@ -53,7 +53,7 @@ var form = {
     slug: "section_blog",
     show: function show() {
       var _this$form;
-      return (this === null || this === void 0 || (_this$form = this.form) === null || _this$form === void 0 ? void 0 : _this$form.type) === 'blog_section';
+      return (this === null || this === void 0 || (_this$form = this.form) === null || _this$form === void 0 ? void 0 : _this$form.type) === 'section_blogs';
     },
     columns: [{
       label: "id",
@@ -100,15 +100,10 @@ var form = {
     width: 500,
     label: "album",
     ratio: 16 / 9,
-    endPoint: {
-      name: "image.upload_album",
-      params: {
-        no_pagination: true
-      }
-    },
+    endPoint: 'upload.album',
     show: function show() {
       var _this$form2;
-      return (this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type) === 'slider_section';
+      return (this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type) === 'section_sliders';
     }
   }]
 };

@@ -22,8 +22,8 @@ export default function (app) {
             permissions: () => instance.generateURL('GET', {}, 'role/get/permissions'),
         }),
         admins: instance.resource('admin'),
-        image:{
-            upload_album: () => instance.generateURL('POST', {}, 'image','upload'),
+        upload: {
+            album: () => instance.generateURL('POST', {}, 'album', 'upload'),
         },
 
     };

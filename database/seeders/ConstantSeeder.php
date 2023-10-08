@@ -15,7 +15,7 @@ class ConstantSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach ($this->paymentMethods() as $item) {
+        foreach ($this->sectionTypes() as $item) {
             Constant::updateOrCreate(
                 array(
                     'key' => $item['key'],
@@ -32,12 +32,22 @@ class ConstantSeeder extends Seeder
             [
                 'name' => ['ar' => 'سلايدرات', 'en' => 'Sliders'],
                 'key' => ConstantEnum::SECTIONS_TYPES,
-                'value' => ['key' => ConstantEnum::SLIDER_SECTION,]
+                'value' => ['key' => ConstantEnum::SECTION_SLIDERS,]
             ],
             [
                 'name' => ['ar' => 'مقالات', 'en' => 'Blogs'],
                 'key' => ConstantEnum::SECTIONS_TYPES,
-                'value' => ['key' => ConstantEnum::BLOG_SECTION,]
+                'value' => ['key' => ConstantEnum::SECTION_BLOGS,]
+            ],
+            [
+                'name' => ['ar' => 'الفئات', 'en' => 'Categories'],
+                'key' => ConstantEnum::SECTIONS_TYPES,
+                'value' => ['key' => ConstantEnum::SECTION_CATEGORIES,]
+            ],
+            [
+                'name' => ['ar' => 'الخدمات', 'en' => 'Services'],
+                'key' => ConstantEnum::SECTIONS_TYPES,
+                'value' => ['key' => ConstantEnum::SECTION_SERVICES,]
             ],
         ];
     }

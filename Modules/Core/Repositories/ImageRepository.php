@@ -10,6 +10,7 @@
 namespace Modules\Core\Repositories;
 
 
+use App\Models\Image;
 use Illuminate\Support\Facades\Storage;
 use Modules\Core\Exceptions\UploadErrorException;
 use Modules\Core\Interfaces\AttachmentInterface;
@@ -30,7 +31,7 @@ class ImageRepository implements AttachmentInterface
      * @return mixed
      * @throws UploadErrorException
      */
-    public function upload($image)
+    public function upload($image, $returnModel = false)
     {
         $extension = $image->getClientOriginalExtension();
 
@@ -43,12 +44,13 @@ class ImageRepository implements AttachmentInterface
         if (!isset($response))
             throw  new UploadErrorException(__('lang.uploading_error_exception'), UPLOADING_ERROR);
         //
-        $this->saveToModel([
-            'file_name' => $filename,
-            'display_name' => $originalName,
-            'size' => 0,
-            'extension' => $extension
-        ]);
+        if ($returnModel)
+            return $this->saveToModel([
+                'file_name' => $filename,
+                'display_name' => $originalName,
+                'size' => 0,
+                'extension' => $extension
+            ]);
 
         return $filename;
     }
@@ -105,8 +107,8 @@ class ImageRepository implements AttachmentInterface
      */
     public function saveToModel($data)
     {
-        return $data;
-//        return Image::create($data);
+//        return $data;
+        return Image::create($data);
     }
 
     /**

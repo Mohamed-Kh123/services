@@ -13,11 +13,6 @@ enum ConstantEnum
 
     const PREVIEW_ORDER = 'preview_order';
 
-    const SECTIONS_TYPES = 'sections_types';
-
-    const SLIDER_SECTION = 'slider_section';
-
-    const BLOG_SECTION = 'blog_section';
 
     const PAYMENT_METHODS = 'payment_methods';
 
@@ -27,5 +22,13 @@ enum ConstantEnum
 
     const STRIPE = 'stripe';
 
+    const SECTIONS_TYPES = 'sections_types';
 
+    const SECTION_BLOGS = 'section_blogs';
+
+    const SECTION_SLIDERS = 'section_sliders';
+
+    const SECTION_SERVICES = 'section_services';
+
+    const SECTION_CATEGORIES = 'section_categories';
 }

@@ -37,7 +37,7 @@ const form = {
             model: "blogs",
             slug: "section_blog",
             show: function () {
-                return this?.form?.type === 'blog_section';
+                return this?.form?.type === 'section_blogs';
             },
             columns: [
                 {
@@ -94,9 +94,9 @@ const form = {
             width: 500,
             label: "album",
             ratio: 16 / 9,
-            endPoint: {name: "image.upload_album", params: {no_pagination: true}},
+            endPoint: 'upload.album',
             show: function () {
-                return this?.form?.type === 'slider_section';
+                return this?.form?.type === 'section_sliders';
             },
         },
 

@@ -20,8 +20,8 @@ use \Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Core\Http\Middleware\LanguageMiddleware::class], function () {
 
-    Route::prefix('image')->group(function () {
-        Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
+    Route::prefix('album')->group(function () {
+        Route::post('/upload', 'ImageController@upload');
     });
 
     Route::authApiRoutes();
@@ -33,9 +33,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => \Modules\Co
         Route::resourceRoutes('employee', 'EmployeeController');
         Route::resourceRoutes('select-group', 'SelectGroupController');
         Route::resourceRoutes('customer', 'CustomerController');
-        Route::resourceRoutes('admin','AdminsController');
-        Route::resourceRoutes('section','SectionController');
-        Route::resourceRoutes('section-blog','SectionBlogController');
+        Route::resourceRoutes('admin', 'AdminsController');
+        Route::resourceRoutes('section', 'SectionController');
+        Route::resourceRoutes('section-blog', 'SectionBlogController');
         Route::get('constant', 'ConstantController@index');
         Route::resourceRoutes('role', 'RoleController', function () {
             Route::get('/get/permissions', 'RoleController@permissions');

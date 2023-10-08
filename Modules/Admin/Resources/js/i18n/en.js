@@ -52,5 +52,11 @@ export default {
     'admin_menu': 'Admins',
     'name_email': 'name or email',
     'min_price': 'Minimum price',
+    'section.all': 'Show sections',
+    'section.create': 'Create section',
+    'section.edit': 'Edit section',
+    'section': 'Sections',
+    'type': 'type',
+    'album': 'album',
 }
 

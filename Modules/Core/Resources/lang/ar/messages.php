@@ -37,5 +37,5 @@ return [
     "paymentmethod" => "طرق الدفع ",
     'service' => 'خدمة',
     'category'=> 'فئة',
-
+    'section' => 'قسم',
 ];
