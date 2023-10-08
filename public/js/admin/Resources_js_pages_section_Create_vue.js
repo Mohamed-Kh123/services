@@ -116,7 +116,8 @@ var form = {
     endPoint: {
       name: 'category.index',
       params: {
-        no_pagination: true
+        no_pagination: true,
+        active: true
       }
     },
     rules: {
@@ -137,7 +138,8 @@ var form = {
     endPoint: {
       name: 'service.index',
       params: {
-        no_pagination: true
+        no_pagination: true,
+        active: true
       }
     },
     rules: {

@@ -108,7 +108,7 @@ const form = {
             option_name: "name",
             multiple: true,
             cols: 6,
-            endPoint: {name: 'category.index', params: {no_pagination: true}},
+            endPoint: {name: 'category.index', params: {no_pagination: true, active:true}},
             rules: {
                 required: false
             },
@@ -125,7 +125,7 @@ const form = {
             option_name: "name",
             multiple: true,
             cols: 6,
-            endPoint: {name: 'service.index', params: {no_pagination: true}},
+            endPoint: {name: 'service.index', params: {no_pagination: true, active:true}},
             rules: {
                 required: false
             },

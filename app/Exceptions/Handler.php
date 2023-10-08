@@ -34,7 +34,7 @@ class Handler extends ExceptionHandler
     }
     public function render($request, Throwable $exception)
     {
-//        dd($exception);
+        dd($exception);
         if ($request->isJson() || $request->is('api/*')) {
             if ($exception instanceof NotFoundHttpException)
                 return response()->api(ERROR_RESPONSE, trans('core::lang.route_not_found'), [], null, RESOURCE_NOT_FOUND);
