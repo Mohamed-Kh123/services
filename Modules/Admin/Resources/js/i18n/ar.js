@@ -52,6 +52,12 @@ export default {
     'admin_menu': 'المدراء',
     'name_email': 'الاسم أو الإيميل',
     'min_price' : 'سعر الحد الأدنى',
+    'section.all': 'عرض الأقسام',
+    'section.create': 'إنشاء قسم',
+    'section.edit': 'تعديل قسم',
+    'section': 'الأقسام',
+    'type': 'نوع',
+    'album': 'ألبوم',
 }
 
 

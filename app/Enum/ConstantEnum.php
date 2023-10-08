@@ -19,5 +19,7 @@ enum ConstantEnum
 
     const BLOG_SECTION = 'blog_section';
 
+    const SERVICE_SECTION= 'service_section';
 
+    const CATEGORY_SECTION = 'category_section';
 }

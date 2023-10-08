@@ -139,8 +139,15 @@ function flattern($array, $delimiter)
  * @author Nawa
  */
 
-function image_url($img, $size = '')
+function image_url($img, $size = '', $isArray = false)
 {
+    $array = [];
+    if($isArray){
+        foreach ($img as $im){
+            $array[] = (!empty($size)) ? url('image/' . $size . '/' . $im) : url('image/' . $im);
+        }
+        return $array;
+    }
     return (!empty($size)) ? url('image/' . $size . '/' . $img) : url('image/' . $img);
 }
 

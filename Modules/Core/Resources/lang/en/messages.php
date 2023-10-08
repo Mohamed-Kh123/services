@@ -37,5 +37,6 @@ return [
     "paymentmethod" => "Payment Method",
     'service' => 'service',
     'category'=> 'category',
+    'section' => 'section',
 
 ];

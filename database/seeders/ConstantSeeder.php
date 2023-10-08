@@ -39,6 +39,16 @@ class ConstantSeeder extends Seeder
                 'key' => ConstantEnum::SECTIONS_TYPES,
                 'value' => ['key' => ConstantEnum::BLOG_SECTION,]
             ],
+            [
+                'name' => ['ar' => 'الفئات', 'en' => 'Categories'],
+                'key' => ConstantEnum::SECTIONS_TYPES,
+                'value' => ['key' => ConstantEnum::CATEGORY_SECTION,]
+            ],
+            [
+                'name' => ['ar' => 'الخدمات', 'en' => 'Services'],
+                'key' => ConstantEnum::SECTIONS_TYPES,
+                'value' => ['key' => ConstantEnum::SERVICE_SECTION,]
+            ],
         ];
     }
 }
