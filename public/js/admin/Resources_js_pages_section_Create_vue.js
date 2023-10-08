@@ -104,7 +104,7 @@ var form = {
     show: function show() {
       var _this$form2, _this$form3;
       console.log('slider_type', this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type);
-      return (this === null || this === void 0 || (_this$form3 = this.form) === null || _this$form3 === void 0 ? void 0 : _this$form3.type) === 'slider_section';
+      return (this === null || this === void 0 || (_this$form3 = this.form) === null || _this$form3 === void 0 ? void 0 : _this$form3.type) === 'section_sliders';
     }
   }, {
     component: "select",
@@ -127,7 +127,7 @@ var form = {
     show: function show() {
       var _this$form4, _this$form5;
       console.log('category_type', this === null || this === void 0 || (_this$form4 = this.form) === null || _this$form4 === void 0 ? void 0 : _this$form4.type);
-      return (this === null || this === void 0 || (_this$form5 = this.form) === null || _this$form5 === void 0 ? void 0 : _this$form5.type) === 'category_section';
+      return (this === null || this === void 0 || (_this$form5 = this.form) === null || _this$form5 === void 0 ? void 0 : _this$form5.type) === 'section_categories';
     }
   }, {
     component: "select",
@@ -150,7 +150,7 @@ var form = {
     show: function show() {
       var _this$form6, _this$form7;
       console.log('service_type', this === null || this === void 0 || (_this$form6 = this.form) === null || _this$form6 === void 0 ? void 0 : _this$form6.type);
-      return (this === null || this === void 0 || (_this$form7 = this.form) === null || _this$form7 === void 0 ? void 0 : _this$form7.type) === 'service_section';
+      return (this === null || this === void 0 || (_this$form7 = this.form) === null || _this$form7 === void 0 ? void 0 : _this$form7.type) === 'section_services';
     }
   }]
 };

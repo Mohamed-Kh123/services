@@ -97,7 +97,7 @@ const form = {
             endPoint: 'upload.album',
             show: function () {
                 console.log('slider_type', this?.form?.type);
-                return this?.form?.type === 'slider_section';
+                return this?.form?.type === 'section_sliders';
             },
         },
 
@@ -115,7 +115,7 @@ const form = {
             },
             show: function () {
                 console.log('category_type', this?.form?.type);
-                return this?.form?.type === 'category_section';
+                return this?.form?.type === 'section_categories';
             },
         },
 
@@ -133,7 +133,7 @@ const form = {
             },
             show: function () {
                 console.log('service_type', this?.form?.type);
-                return this?.form?.type === 'service_section';
+                return this?.form?.type === 'section_services';
             },
         },
     ]

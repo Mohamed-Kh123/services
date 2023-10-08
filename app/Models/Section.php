@@ -45,11 +45,11 @@ class Section extends BaseModel
     public function getSectionDataAttribute()
     {
         switch ($this->type) {
-            case 'service_section';
+            case ConstantEnum::SECTION_SERVICES;
                 return ServiceResource::collection($this->services);
-            case 'category_section';
+            case ConstantEnum::SECTION_CATEGORIES;
                 return CategoryResource::collection($this->categories);
-            case 'slider_section';
+            case ConstantEnum::SECTION_SLIDERS;
                 return SliderResource::collection($this->sliders);
         }
     }
