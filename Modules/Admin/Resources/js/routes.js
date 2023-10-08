@@ -37,6 +37,6 @@ export default [
     buildRoutes('customer'),
     buildRoutes('role'),
     buildRoutes('admins'),
-    buildRoutes('slider'),
+    buildRoutes('section'),
 
 ];

@@ -16,11 +16,15 @@ export default function (app) {
         employee: instance.resource('employee'),
         select_group: instance.resource('select-group'),
         customer: instance.resource('customer'),
-        slider: instance.resource('slider'),
-
+        section: instance.resource('section'),
+        section_blog: instance.resource('section-blog'),
         role: instance.resource("role", {
             permissions: () => instance.generateURL('GET', {}, 'role/get/permissions'),
         }),
-        admins: instance.resource('admin')
+        admins: instance.resource('admin'),
+        image:{
+            upload_album: () => instance.generateURL('POST', {}, 'image','upload'),
+        },
+
     };
 }

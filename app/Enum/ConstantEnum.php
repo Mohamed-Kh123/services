@@ -13,5 +13,11 @@ enum ConstantEnum
 
     const PREVIEW_ORDER = 'preview_order';
 
+    const SECTIONS_TYPES = 'sections_types';
+
+    const SLIDER_SECTION = 'slider_section';
+
+    const BLOG_SECTION = 'blog_section';
+
 
 }

@@ -50,10 +50,10 @@ export default [
         to: {name: "employee.all"},
     },
     {
-        key: "slider",
+        key: "section",
         icon: "icon-grid-view",
-        label: "slider",
-        to: {name: "slider.all"},
+        label: "section",
+        to: {name: "section.all"},
     },
 
 ];

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use \Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ use Illuminate\Http\Request;
 //\Illuminate\Support\Facades\Route::group(['prefix' => 'image'], function () {
 //  \Illuminate\Support\Facades\Route::post('/upload', 'ImageController@upload');
 //});
-Route::group(['prefix' => STORAGE_FILES_PATH_PREFIX],function (){
+Route::group(['prefix' => STORAGE_FILES_PATH_PREFIX], function () {
     Route::get('/preview/{arg}/{arg1}/{arg2?}/{arg3?}', 'BaseController@previewFileApi');
 });
+

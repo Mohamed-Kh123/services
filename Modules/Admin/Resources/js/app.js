@@ -4,7 +4,7 @@ import i18n from "./i18n";
 import config from "./config";
 import endPoints from "./endPoints";
 import common from "nawadash/src/mixins/common.js";
-import ButtonField from "./components/Button.vue";
+// import ButtonField from "./components/Button.vue";
 
 const app = new App({
     base: "admin",
@@ -13,9 +13,7 @@ const app = new App({
     i18n,
     common,
     endPoints,
-    components : {
-        ButtonField
-    }
+    components : {}
 }).init();
 
 export default app;
