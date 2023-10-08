@@ -33,7 +33,8 @@ var config = {
   importBtn: false,
   pdfBtn: false,
   excelBtn: false,
-  createBtn: true
+  createBtn: true,
+  sortable: true
 };
 var filters = [
   // {

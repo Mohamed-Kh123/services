@@ -23,6 +23,7 @@ const config = {
     pdfBtn: false,
     excelBtn: false,
     createBtn: true,
+    sortable : true
 }
 
 

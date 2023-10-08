@@ -20,6 +20,8 @@ return new class extends Migration
             $table->unsignedBigInteger('customer_id');
             $table->json('customer_data');
             $table->json('data')->nullable();
+            $table->timestamp('booking_at');
+            $table->string('payment_method');
             $table->softDeletes();
             $table->timestamps();
         });
