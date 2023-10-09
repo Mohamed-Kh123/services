@@ -5,7 +5,9 @@ namespace Modules\Customer\Repositories;
 use App\Models\Customer;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Modules\Core\Repositories\Api\BaseRepository;
+use Modules\Customer\Exceptions\OrderException;
 
 class OrderRepository extends BaseRepository
 {
@@ -16,8 +18,19 @@ class OrderRepository extends BaseRepository
         $data['customer_id'] = userAuth()->id;
         $data['customer_data'] = userAuth();
         $data['service_data'] = $service;
-        $data['total'] = $service->total;
         return $data;
     }
 
+    public function store(Request $request)
+    {
+        DB::beginTransaction();
+        try {
+            $model = parent::store($request);
+            DB::commit();
+            return $model;
+        } catch (OrderException $orderException) {
+            DB::rollback();
+            throw $orderException;
+        }
+    }
 }

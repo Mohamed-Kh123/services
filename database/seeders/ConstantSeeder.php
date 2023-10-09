@@ -15,7 +15,7 @@ class ConstantSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach ($this->sectionTypes() as $item) {
+        foreach ($this->paymentMethods() as $item) {
             Constant::updateOrCreate(
                 array(
                     'key' => $item['key'],

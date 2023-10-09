@@ -11,7 +11,17 @@ class Order extends BaseModel
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'service_id', 'service_data', 'items', 'total', 'customer_id', 'customer_data', 'data', 'booking_at', 'payment_method',
+        'service_id',
+        'service_data',
+        'items',
+        'total',
+        'customer_id',
+        'customer_data',
+        'data',
+        'booking_at',
+        'payment_method',
+        'remaining_amount',
+        'payment_amount',
     ];
 
     protected $casts = [

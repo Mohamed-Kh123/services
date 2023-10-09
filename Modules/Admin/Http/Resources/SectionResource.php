@@ -3,18 +3,18 @@
 
 namespace Modules\Admin\Http\Resources;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Modules\Core\Http\Resources\AttachmentResource;
 use Modules\Core\Http\Resources\BaseResource;
 use App\Models\Admin;
 
 class SectionResource extends BaseResource
-
 {
     /**
      * Transform the resource into an array.
      *'name', 'type', 'data', 'ordered', 'is_active'
-     * @param \Illuminate\Http\Request
+     * @param Request $request
      * @return array
      */
     public function toArray($request)

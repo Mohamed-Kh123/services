@@ -21,6 +21,8 @@ return new class extends Migration {
             $table->json('data')->nullable();
             $table->timestamp('booking_at');
             $table->enum('payment_method', [\App\Enum\ConstantEnum::STRIPE, \App\Enum\ConstantEnum::TAMARA, \App\Enum\ConstantEnum::TABBY,]);
+            $table->double('payment_amount')->default(0);
+            $table->double('remaining_amount');
             $table->softDeletes();
             $table->timestamps();
         });
