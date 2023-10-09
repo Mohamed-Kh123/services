@@ -20,8 +20,8 @@ class ServiceResource extends BaseResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
-            'description' => $this->description,
+            'name' => $this->getTranslations('name'),
+            'description' => $this->getTranslations('description'),
             'category_name' => optional($this->category)->name,
             'order_determine_types' => $this->order_determine_types,
             'image_url' => $this->image ? image_url($this->image) : null,

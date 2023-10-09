@@ -23,10 +23,6 @@ var columns = [{
   text: "name",
   value: "name"
 }, {
-  text: "image",
-  value: "image_url",
-  component: "image-holder"
-}, {
   text: "is_active",
   value: "is_active",
   name: "category.update",

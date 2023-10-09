@@ -42,7 +42,7 @@ class Section extends BaseModel
         return $this->belongsToMany(Category::class, 'section_categories', 'section_id', 'category_id');
     }
 
-    public function getDataAttribute()
+    public function getSectionDataAttribute()
     {
         switch ($this->type) {
             case ConstantEnum::SECTION_SERVICES;

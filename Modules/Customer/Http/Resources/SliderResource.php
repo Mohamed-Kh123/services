@@ -20,8 +20,7 @@ class SliderResource extends BaseResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
-            'image_url' => $this->data && $this->data['images'] ? image_url($this->data['images'], '', true) : null,
+            'image_url' => $this->display_name ? image_url($this->display_name) : null,
         ];
     }
 

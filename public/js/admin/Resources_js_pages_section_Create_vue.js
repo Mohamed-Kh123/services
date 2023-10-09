@@ -102,8 +102,55 @@ var form = {
     ratio: 16 / 9,
     endPoint: 'upload.album',
     show: function show() {
-      var _this$form2;
-      return (this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type) === 'section_sliders';
+      var _this$form2, _this$form3;
+      console.log('slider_type', this === null || this === void 0 || (_this$form2 = this.form) === null || _this$form2 === void 0 ? void 0 : _this$form2.type);
+      return (this === null || this === void 0 || (_this$form3 = this.form) === null || _this$form3 === void 0 ? void 0 : _this$form3.type) === 'section_sliders';
+    }
+  }, {
+    component: "select",
+    model: "categories",
+    label: "categories",
+    track_value: "id",
+    option_name: "name",
+    multiple: true,
+    cols: 6,
+    endPoint: {
+      name: 'category.index',
+      params: {
+        no_pagination: true,
+        active: true
+      }
+    },
+    rules: {
+      required: false
+    },
+    show: function show() {
+      var _this$form4, _this$form5;
+      console.log('category_type', this === null || this === void 0 || (_this$form4 = this.form) === null || _this$form4 === void 0 ? void 0 : _this$form4.type);
+      return (this === null || this === void 0 || (_this$form5 = this.form) === null || _this$form5 === void 0 ? void 0 : _this$form5.type) === 'section_categories';
+    }
+  }, {
+    component: "select",
+    model: "services",
+    label: "services",
+    track_value: "id",
+    option_name: "name",
+    multiple: true,
+    cols: 6,
+    endPoint: {
+      name: 'service.index',
+      params: {
+        no_pagination: true,
+        active: true
+      }
+    },
+    rules: {
+      required: false
+    },
+    show: function show() {
+      var _this$form6, _this$form7;
+      console.log('service_type', this === null || this === void 0 || (_this$form6 = this.form) === null || _this$form6 === void 0 ? void 0 : _this$form6.type);
+      return (this === null || this === void 0 || (_this$form7 = this.form) === null || _this$form7 === void 0 ? void 0 : _this$form7.type) === 'section_services';
     }
   }]
 };
